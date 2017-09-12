@@ -1,0 +1,6 @@
+num=input()
+number=int(num)
+num2=str(number+1)
+print ('следующее за ' + num + ' число: ' + num2)
+num2=str(number-1)
+print ('предыдущее до ' + num + ' число: ' + num2)
