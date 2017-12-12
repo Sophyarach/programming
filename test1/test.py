@@ -3,7 +3,7 @@ if task=="1":
     with open ("Extinct_languages.tsv" , encoding="utf-8") as f:
         for line in f:
             if len(line)>36:
-                print(line[:-1])#убираю переход на новую строку, потому что print добавляет свой
+                print(line[:-1]) #убираю переход на новую строку, потому что print добавляет свой
 elif task=="2":
     with open ("Extinct_languages.tsv" , encoding="utf-8") as f:
         n=0
