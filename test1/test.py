@@ -3,7 +3,7 @@ if task=="1":
     with open ("Extinct_languages.tsv" , encoding="utf-8") as f:
         for line in f:
             if len(line)>36:
-                print(line)
+                print(line[:-1])#убираю переход на новую строку, потому что print добавляет свой
 elif task=="2":
     with open ("Extinct_languages.tsv" , encoding="utf-8") as f:
         n=0
@@ -26,5 +26,6 @@ elif task=="3": #ищу точное совпадение с первой кол
             if flag==0:
                 print("Такого языка нет")
             lang=input ("Название языка?\n")
+    print("Вы закончили ввод")
 else:
     print("Вы ввели что-то не то")
